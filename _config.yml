@@ -2,8 +2,8 @@ title:              Ximena Sandoval
 email:              ximena.sandoval.dh@gmail.com
 description:        Sometimes I code
 author:             Ximena Sandoval
-baseurl:            "/adventures"
-url:                "https://ximenasandoval.github.io/adventures/"
+baseurl:            ""
+url:                "https://ximenasandoval.github.io/"
 
 # Social Profiles
 twitter_username:   control_freeak
