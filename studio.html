@@ -1,0 +1,163 @@
+---
+layout: page
+title: Studio
+description: Need a website? I can help you!
+background: '/img/5.jpeg'
+form: true
+---
+
+Need an awesome website for your business? Let me help you with it!
+<br>
+Web design + development rates start at $200 (USD).
+<br><br>
+<h3>
+    The process
+</h3>
+<ul>
+    <li>Fill the client form intake (you'll find it down below)</li>
+    <li>I'll get in touch with you as soon as possible!</li>
+    <li>First design (2 weeks after first message)</li>
+    <li>Iterations (every 2 weeks you'll receive the progress on the website until finish, depending on the scope)</li>
+    <li>Delivery of the final product!</li>
+    <li>Done! You'll have an awesome website :sparkles: </li>
+</ul>
+
+<br>
+<h3>
+    Deliverables
+</h3>
+<ul>
+    <li>Custom HTML + CSS + Javascript / project files</li>
+    <li>Custom made logo (if you need one)(+ $50 USD)</li>
+</ul>
+<br>
+<hr>
+
+<br>
+<h3>
+    Let's work togheter!
+</h3>
+
+<form
+action="https://formspree.io/f/meqpabpg"
+method="POST"
+>
+<br>
+<h4>
+  Client info
+</h4>
+
+<div class="control-group">
+  <div class="form-group floating-label-form-group controls">
+    <label>First name*</label>
+    <input type="text" class="form-control" placeholder="First name*" id="first_name" required data-validation-required-message="Please enter your first name." name="first_name">
+    <p class="help-block text-danger"></p>
+  </div>
+</div>
+<div class="control-group">
+  <div class="form-group floating-label-form-group controls">
+    <label>Last name*</label>
+    <input type="text" class="form-control" placeholder="Last name*" id="last_name" required data-validation-required-message="Please enter your last name." name="last_name">
+    <p class="help-block text-danger"></p>
+  </div>
+</div>
+<div class="control-group">
+  <div class="form-group floating-label-form-group controls">
+    <label>Email Address*</label>
+    <input type="email" class="form-control" placeholder="Email Address*" id="email" required data-validation-required-message="Please enter your email address" name="_replyto">
+    <p class="help-block text-danger"></p>
+  </div>
+</div>
+<div class="control-group">
+  <div class="form-group col-xs-12 floating-label-form-group controls">
+    <label>Phone Number</label>
+    <input type="tel" class="form-control" placeholder="Phone Number" id="phone" name="phone_number">
+    <p class="help-block text-danger"></p>
+  </div>
+</div>
+
+<br>
+<h4>
+  Business info
+</h4>
+<div class="control-group">
+  <div class="form-group floating-label-form-group controls">
+    <label>Business name*</label>
+    <input type="text" class="form-control" placeholder="Business name*" id="business name" required data-validation-required-message="Please enter your business name" name="business_name">
+    <p class="help-block text-danger"></p>
+  </div>
+</div>
+<div class="control-group">
+  <div class="form-group floating-label-form-group controls">
+    <label>Tell me about your business!*</label>
+    <textarea rows="5" class="form-control" placeholder="Tell me about your business!*" id="business_description" required data-validation-required-message="Please enter a business description" name="business_description"></textarea>
+    <p class="help-block text-danger"></p>
+  </div>
+</div>
+
+<br>
+<h4>
+  Project info
+</h4>
+<div class="control-group">
+  <div class="form-group floating-label-form-group controls">
+    <label>Website name*</label>
+    <input type="text" class="form-control" placeholder="Website name*" id="website name" required data-validation-required-message="Please enter your website name" name="website_name">
+    <p class="help-block text-danger"></p>
+  </div>
+</div>
+<div class="control-group">
+  <br>
+  <div class="form-group floating-label-form-group controls">
+    <input type="text" placeholder="Please specify launch date" disabled>
+    <input type="date" class="form-control" 
+     placeholder="Launch date" id="launch_date" required data-validation-required-message="Please enter your launch date" name="launch_date"></input>
+    <p class="help-block text-danger"></p>
+  </div>
+</div>
+<div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Tell me about this projet!*</label>
+      <textarea rows="5" class="form-control" placeholder="Tell me about this project!*" id="message" required data-validation-required-message="Please enter a message." name="message"></textarea>
+      <p class="help-block text-danger"></p>
+    </div>
+</div>
+<div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>What features would you like on the website?*</label>
+      <textarea rows="5" class="form-control" required data-validation-required-message="Please enter a feature."  placeholder="What features would you like on the website? (payment options, contact form, inventory management, etc.)*" id="features" name="features"></textarea>
+      <p class="help-block text-danger"></p>
+    </div>
+</div>
+<div class="control-group">
+  <div class="form-group floating-label-form-group controls">
+    <label>Preferences, guides or restrictions that should be considered?*</label>
+    <textarea rows="5" class="form-control" required data-validation-required-message="Please enter a restriction."  placeholder="Preferences, guides or restrictions that should be considered?*" id="restrictions" name="restrictions"></textarea>
+    <p class="help-block text-danger"></p>
+  </div>
+</div>
+<br>
+<div class="floating-label-form-group">
+    <input type="text" placeholder="* required information" disabled>
+    <br><br>
+</div>
+
+<br>
+<div id="success"></div>
+<div class="form-group">
+  <button type="submit" class="btn btn-primary" id="sendMessageButton">Let's build this website!</button>
+</div>
+</form>
+
+<script>
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    today = yyyy + '-' + mm + '-' + dd;
+    console.log(today);
+    var dateControl = document.querySelector('input[type="date"]');
+    dateControl.value = today;
+    dateControl.min = today; 
+</script>
+
